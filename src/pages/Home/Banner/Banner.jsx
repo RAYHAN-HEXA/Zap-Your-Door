@@ -41,7 +41,7 @@ const Banner = () => {
                 if (isSelected) {
                     return (
                         <li
-                            className="inline-block h-1 w-8 bg-lime-500 mx-1 cursor-pointer transition-all duration-300"
+                            className="inline-block h-1 w-8 bg-lime-500 mx-1 cursor-pointer transition-all duration-100"
                             aria-label={`Selected slide ${label} ${index + 1}`}
                             tabIndex={0}
                             onClick={onClickHandler}
@@ -54,7 +54,7 @@ const Banner = () => {
                 }
                 return (
                     <li
-                        className="inline-block h-1 w-5 bg-gray-300 mx-1 cursor-pointer transition-all duration-300"
+                        className="inline-block h-1 w-5 bg-gray-300 mx-1 cursor-pointer transition-all duration-100"
                         aria-label={`Slide ${label} ${index + 1}`}
                         tabIndex={0}
                         onClick={onClickHandler}
@@ -85,7 +85,7 @@ const Banner = () => {
                             <div className="flex items-center space-x-3"> 
                                 
                                 {/* Track Your Parcel Button (Icon pushed to the right) */}
-                                <button className="flex items-center justify-between bg-lime-400 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-lime-500 transition duration-300 shadow-md w-48"> 
+                                <button className="flex items-center justify-between bg-lime-400 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-lime-500 transition duration-100 shadow-md w-48"> 
                                     
                                     {/* 1. Button Text */}
                                     <span className="text-sm">Track Your Parcel</span> 
@@ -97,7 +97,7 @@ const Banner = () => {
                                 </button>
 
                                 {/* Be A Rider Button (Size reduced) */}
-                                <button className="bg-white text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-100 transition duration-300 border border-gray-300 shadow-sm text-sm"> 
+                                <button className="bg-white text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-100 transition duration-100 border border-gray-300 shadow-sm text-sm"> 
                                     Be A Rider
                                 </button>
                             </div>
